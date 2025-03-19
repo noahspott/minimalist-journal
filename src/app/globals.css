@@ -5,3 +5,17 @@ body {
   max-width: 1920px;
   min-width: 320px;
 }
+
+@layer {
+  .heading-1 {
+    @apply text-2xl;
+  }
+
+  .heading-2 {
+    @apply text-xl;
+  }
+
+  .button-1 {
+    @apply hover:shadow-lg px-2 py-4 shadow-sm hover:cursor-pointer rounded-full text-xl uppercase bg-gray-900 text-gray-50 dark:bg-gray-50 dark:text-gray-950 dark:shadow-gray-700;
+  }
+}

@@ -14,6 +14,7 @@ import { ThemeProvider } from "@/context/ThemeContext";
 
 // Data
 import { APP_NAME } from "@/data/aboutApp";
+import { navRoutes } from "@/data/navRoutes";
 
 export const metadata: Metadata = {
   title: "Minimalist Journal",
@@ -27,9 +28,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="bg-white/90 transition-colors duration-300 dark:bg-black/90 dark:text-white/90 text-black/90">
+      <body className="bg-gray-100 transition-colors duration-300 dark:bg-gray-900 dark:text-gray-50 text-gray-950">
         <ThemeProvider>
-          <Header appName={APP_NAME} />
+          <Header appName={APP_NAME} navRoutes={navRoutes} />
           {children}
         </ThemeProvider>
       </body>
